@@ -1,4 +1,4 @@
-package filesandapi;
+package main.java.filesandapi;
 
 import java.io.IOException;
 import java.net.URI;

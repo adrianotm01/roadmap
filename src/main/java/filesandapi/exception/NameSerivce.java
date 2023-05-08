@@ -1,4 +1,4 @@
-package filesandapi.exception;
+package main.java.filesandapi.exception;
 
 public class NameSerivce {
 

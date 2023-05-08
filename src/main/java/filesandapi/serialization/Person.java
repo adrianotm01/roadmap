@@ -1,4 +1,4 @@
-package filesandapi.serialization;
+package main.java.filesandapi.serialization;
 
 import java.io.Serializable;
 
