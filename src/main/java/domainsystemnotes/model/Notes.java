@@ -1,4 +1,4 @@
-package domain.model;
+package domainsystemnotes.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

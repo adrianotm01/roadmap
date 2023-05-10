@@ -8,6 +8,9 @@ import java.io.ObjectOutputStream;
 import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import main.java.filesandapi.ApiUtil;
 import main.java.filesandapi.FileUtil;
 import main.java.filesandapi.serialization.Person;
@@ -16,6 +19,8 @@ import main.java.socket.Server;
 public class Main {
 
     public static void main(String[] args) throws IOException, URISyntaxException, InterruptedException, ClassNotFoundException {
+        EntityManager manager = Persistence.createEntityManagerFactory("test").createEntityManager();
+
         FileUtil fileUtil = new FileUtil();
         fileUtil.write("C:\\Users\\adriano.junior\\Downloads\\text.txt", "TESTEANDOdsadsadas dsasadsa");
         fileUtil.read("C:\\Users\\adriano.junior\\Downloads\\text.txt");
