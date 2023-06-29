@@ -18,14 +18,13 @@ public class NotesRepositoryImpl implements NotesRepository {
     @Override
     public Notes findById(Integer id) {
         manager.getTransaction().begin();
-        Notes notes = manager.find(Notes.class, "");
+        Notes notes = manager.createQuery("SELECT * FROM NOTES n WHERE n.id = ?", Notes.class).setParameter(1, id).getSingleResult();
         manager.close();
         return notes;
     }
 
     @Override
     public List<Notes> findAll() {
-        IntStream.range(0, 10).forEach((n) -> System.out.println(n) );
         return null;
     }
 

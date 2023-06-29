@@ -11,7 +11,7 @@
                       value="org.postgresql.Driver" />
 
             <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:postgresql://localhost:5434/postgres" />
+                      value="jdbc:postgresql://localhost:5432/postgres" />
 
             <property name="jakarta.persistence.jdbc.user"
                       value="postgres" />
